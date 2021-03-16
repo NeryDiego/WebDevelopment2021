@@ -1,6 +1,9 @@
 var stringVar = "Diego";
 console.log(stringVar);
 
+stringVar = 200;
+console.log(typeof(stringVar));
+
 var intVar = 10;
 console.log(intVar);
 
@@ -13,3 +16,4 @@ var objeto = {
 
 console.log(objeto);
 console.log(objeto.edad);
+console.log(typeof(objeto));
