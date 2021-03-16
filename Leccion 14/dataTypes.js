@@ -49,3 +49,8 @@ console.log(typeof(x));
 var y = null;
 console.log(y);
 console.log(typeof y);
+
+//Arrays en JS son objetos
+var autos = ['Mazda', 'Honda', 'BMW'];
+console.log(autos[2]);
+console.log(typeof autos);
