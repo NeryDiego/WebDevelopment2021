@@ -1,4 +1,4 @@
-let edad = 21;
+let edad = 17;
 const adulto = 18;
 function esMayorDeEdad(edad){
     if(edad >= adulto){
@@ -7,3 +7,5 @@ function esMayorDeEdad(edad){
         console.log("Es menor de edad");
     }
 }
+
+esMayorDeEdad(edad);

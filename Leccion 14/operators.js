@@ -60,7 +60,6 @@ console.log(var1);
 */
 let var2 = 3;
 let string1 = "3";
-let string2 = "Hola";
 
 // == revisa el valor sin importar el tipo
 let var3 = var2 == string1; 
@@ -77,4 +76,16 @@ var3 = var1 != var2;
 console.log(var3);
 
 var3 = 3 !== "3";
+console.log(var3);
+
+/*
+ Operadores Relacionales
+*/
+var3 = 4 < 5;
+console.log(var3);
+
+var3 = 5 < 3;
+console.log(var3);
+
+var3 = 5 <= 5;
 console.log(var3);
