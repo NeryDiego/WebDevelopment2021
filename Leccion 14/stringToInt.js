@@ -12,3 +12,18 @@ if(edad >= 18){
 
 let resultado = (edad >= 18) ? "Puede votar" : "Muy joven para votar";
 console.log(resultado);
+
+// Valor NaN (Not a Number)
+let NaNValue = "18x";
+let number = Number(NaNValue);
+console.log(number);
+
+if( isNaN(number) ){
+    console.log("No es un número");
+} else {
+    if(number >= 18){
+        console.log("Numero");
+    } else {
+        console.log("NaN");
+    }
+}
