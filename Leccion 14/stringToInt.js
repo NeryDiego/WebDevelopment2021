@@ -14,7 +14,7 @@ let resultado = (edad >= 18) ? "Puede votar" : "Muy joven para votar";
 console.log(resultado);
 
 // Valor NaN (Not a Number)
-let NaNValue = "18x";
+let NaNValue = "18p";
 let number = Number(NaNValue);
 console.log(number);
 
