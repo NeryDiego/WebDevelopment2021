@@ -8,3 +8,12 @@ for(let count = 0; count <= 3; count++){
 }
 
 console.log("Fin ciclo For");
+
+for(let i = 0; i <= 10; i++){
+    if(i % 2 !== 0){
+        continue; //Se va a ejecutar la siguiente iteración del ciclo for
+        console.log("Esto no se ejecuta");
+    } else {
+        console.log("Variable par: " + i);
+    }
+}
