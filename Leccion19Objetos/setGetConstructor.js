@@ -51,8 +51,8 @@ console.log(hijo);
 let persona1 = {
     nombre : "Juan",
     apellido : "Perez",
-    nombreCompleto : function(){
-        return this.nombre + ' ' + this.apellido;
+    nombreCompleto : function(titulo, tel){
+        return titulo + ':' + this.nombre + ' ' + this.apellido + ',' + tel;
     }
 }
 
@@ -65,3 +65,6 @@ let persona2 = {
 console.log(persona1.nombreCompleto());
 
 console.log(persona1.nombreCompleto.call(persona2));
+
+// Parar argumentos usando Call
+console.log(persona1.nombreCompleto.call(persona2, 'Ing', '123456779'));
