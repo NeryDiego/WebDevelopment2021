@@ -52,7 +52,7 @@ let persona1 = {
     nombre : "Juan",
     apellido : "Perez",
     nombreCompleto : function(titulo, tel){
-        return titulo + ':' + this.nombre + ' ' + this.apellido + ',' + tel;
+        return titulo + ':' + this.nombre + ' ' + this.apellido + ', ' + tel;
     }
 }
 
@@ -68,3 +68,13 @@ console.log(persona1.nombreCompleto.call(persona2));
 
 // Parar argumentos usando Call
 console.log(persona1.nombreCompleto.call(persona2, 'Ing', '123456779'));
+
+// Metodo APPLY tiene una diferencia en comparacion a CALL
+console.log(persona1.nombreCompleto('Lic','55664664'));
+
+/*
+    Con apply mandamos un arreglo con los argumentos
+*/
+
+let arreglo = ['Ing', '123-55-444'];
+console.log(persona1.nombreCompleto.apply(persona2, arreglo));
