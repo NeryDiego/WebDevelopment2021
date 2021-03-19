@@ -47,3 +47,21 @@ console.log(hijo.tel);
 hijo.tel = '33147985790';
 console.log(hijo);
 
+// Método CALL permite llamar un metodo definido en un objeto desde otro objeto
+let persona1 = {
+    nombre : "Juan",
+    apellido : "Perez",
+    nombreCompleto : function(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+let persona2 = {
+    nombre : "Carlos",
+    apellido : "Lara"
+}
+
+// Uso de metodo CALL
+console.log(persona1.nombreCompleto());
+
+console.log(persona1.nombreCompleto.call(persona2));
