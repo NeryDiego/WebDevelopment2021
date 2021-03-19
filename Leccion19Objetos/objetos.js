@@ -25,3 +25,12 @@ for (const key in persona2) {
         
     }
 }
+
+//Eliminar/Agregar propiedades
+persona2.direccion = "Valle Imperial";
+
+console.log(persona2);
+
+delete persona2.direccion;
+
+console.log(persona2);
