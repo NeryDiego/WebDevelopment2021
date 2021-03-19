@@ -1,5 +1,5 @@
 //Funciones normales
-function suma(a,b){
+function suma(a,b = 10){
     console.log(arguments[0]);
     console.log(arguments[1]);
     console.log(a+b);
