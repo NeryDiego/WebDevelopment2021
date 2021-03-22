@@ -40,6 +40,15 @@ class Persona{
         //o de tipo hijo
         return this.nombreCompleto();
     }
+
+    //Método estatico, se asocia unicamente a esta clase (NO al objeto)
+    static saludar(){
+        console.log("Saludos desde método static");
+    }
+
+    static saludar2(persona){
+        console.log(persona.nombre);
+    }
 }
 
 /*
@@ -75,9 +84,15 @@ let persona2 = new Persona("Diego", "Nery");
 persona2.nombre = "Pablo";
 console.log(persona2.toString());
 
+//persona1.saludar; no es posible llamar un método static desde un objeto
+Persona.saludar();
+Persona.saludar2(persona1);
+
 let empleado = new Empleado("Emmanuel", "Ruiz","Ingeniero");
 console.log(empleado);
 console.log(empleado.nombre);
 console.log(empleado.nombreCompleto());
 
 console.log(empleado.toString());
+
+console.log(empleado);
