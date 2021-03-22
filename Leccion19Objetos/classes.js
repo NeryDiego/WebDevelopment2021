@@ -7,9 +7,15 @@
 //let persona3 = new Persona("Sara", "Connor");
 
 class Persona{
+    /*
+        Atributos estáticos, pertenecen a la clase y no pertenecen a ningún objeto
+    */
+    static contadorObjetoPersona = 0;
+    
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
+        Persona.contadorObjetoPersona++;
     }
 
     get nombre(){
@@ -96,3 +102,10 @@ console.log(empleado.nombreCompleto());
 console.log(empleado.toString());
 
 console.log(empleado);
+
+/*
+    Las clases hijas heredan los atributos estáticos
+*/
+console.log(Persona.contadorObjetoPersona);
+
+console.log(Empleado.contadorObjetoPersona);
