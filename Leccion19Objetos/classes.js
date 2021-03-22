@@ -28,6 +28,10 @@ class Persona{
         this._apellido = apellido;
     }
 
+    //Nuevo método
+    nombreCompleto(){
+        return this._nombre + ' ' + this._apellido;
+    }
 }
 
 /*
@@ -57,3 +61,6 @@ console.log(persona2);
 
 let empleado = new Empleado("Emmanuel", "Ruiz","Ingeniero");
 console.log(empleado);
+console.log(empleado.nombre);
+console.log(empleado.nombreCompleto());
+
