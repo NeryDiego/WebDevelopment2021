@@ -78,3 +78,17 @@ console.log(persona1.nombreCompleto('Lic','55664664'));
 
 let arreglo = ['Ing', '123-55-444'];
 console.log(persona1.nombreCompleto.apply(persona2, arreglo));
+
+/*
+ Imprimir
+*/
+
+let array = ['Hola', 'Mundo'];
+let array2 = ['hola', 'hola'];
+console.log(['Hola', 'mundo!']);
+console.log(array2);
+console.log(array[0]);
+
+for(let i = 0; i < array.length; i++){
+    console.log(array[i]);
+}
