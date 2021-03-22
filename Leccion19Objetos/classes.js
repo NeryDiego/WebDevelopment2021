@@ -32,6 +32,12 @@ class Persona{
     nombreCompleto(){
         return this._nombre + ' ' + this._apellido;
     }
+
+    //Override toString() de la clase Padre (Object)
+    toString(){
+        //Se aplica polimorfismo
+        return this.nombreCompleto();
+    }
 }
 
 /*
@@ -65,10 +71,11 @@ console.log(persona1);
 
 let persona2 = new Persona("Diego", "Nery");
 persona2.nombre = "Pablo";
-console.log(persona2);
+console.log(persona2.toString());
 
 let empleado = new Empleado("Emmanuel", "Ruiz","Ingeniero");
 console.log(empleado);
 console.log(empleado.nombre);
 console.log(empleado.nombreCompleto());
 
+console.log(empleado.toString());
