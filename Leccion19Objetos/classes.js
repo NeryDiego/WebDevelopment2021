@@ -35,7 +35,9 @@ class Persona{
 
     //Override toString() de la clase Padre (Object)
     toString(){
-        //Se aplica polimorfismo
+        //Se aplica polimorfismo (multiples formas en tiempo de ejecucion)
+        //el metodo que se ejecuta depende si es una referencia de tipo padres
+        //o de tipo hijo
         return this.nombreCompleto();
     }
 }
