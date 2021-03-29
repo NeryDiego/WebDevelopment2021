@@ -17,7 +17,7 @@ class Persona{
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
-        Persona.contadorObjetoPersona++;
+        this.idPersona = Persona.contadorObjetoPersona++;
     }
 
     get nombre(){
@@ -38,7 +38,7 @@ class Persona{
 
     //Nuevo método
     nombreCompleto(){
-        return this._nombre + ' ' + this._apellido;
+        return this.idPersona + ' ' + this._nombre + ' ' + this._apellido;
     }
 
     //Override toString() de la clase Padre (Object)
@@ -97,14 +97,7 @@ Persona.saludar();
 Persona.saludar2(persona1);
 
 let empleado = new Empleado("Emmanuel", "Ruiz","Ingeniero");
-console.log(empleado);
-console.log(empleado.nombre);
-console.log(empleado.nombreCompleto());
-
-console.log(empleado.toString());
-
-console.log(empleado);
-
+console.log( empleado.toString() );
 /*
     Las clases hijas heredan los atributos estáticos
 */
