@@ -10,8 +10,10 @@ class Persona{
     /*
         Atributos estáticos, pertenecen a la clase y no pertenecen a ningún objeto
     */
-    static contadorObjetoPersona = 0;
+    static contadorObjetoPersona = 0; //Atributo de nuestra clase
     
+    email = 'Valor default'; //Atributo de nuestros objetos (No estatico)
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
